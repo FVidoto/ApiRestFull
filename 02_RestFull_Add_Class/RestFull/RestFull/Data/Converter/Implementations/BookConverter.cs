@@ -17,7 +17,8 @@ namespace RestFull.Data.Converter.Implementations
                 Author = origin.Author,
                 LaunchDate = origin.LaunchDate,
                 Price = origin.Price,
-                Title = origin.Title
+                Title = origin.Title, 
+                Available = origin.Available
             };
         }
 
@@ -30,7 +31,8 @@ namespace RestFull.Data.Converter.Implementations
                 Author = origin.Author,
                 LaunchDate = origin.LaunchDate,
                 Price = origin.Price,
-                Title = origin.Title
+                Title = origin.Title, 
+                Available = origin.Available
             };
         }
 

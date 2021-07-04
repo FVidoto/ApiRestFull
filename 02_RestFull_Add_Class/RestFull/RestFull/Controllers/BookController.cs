@@ -31,13 +31,17 @@ namespace RestFull.Controllers
 
         // Maps GET requests to https://localhost:{port}/api/book
         // Get no parameters for FindAll -> Search All
-        [HttpGet]
+        [HttpGet("{sortDirection}/{pageSize}/{page}")]
         [ProducesResponseType((200), Type = typeof(List<BookVO>))]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
         [ProducesResponseType(401)]
         [TypeFilter(typeof(HyperMediaFilter))]
-        public IActionResult Get()
+        public IActionResult Get(
+            [FromQuery] string name,
+            string sortDirection,
+            int pageSize,
+            int page)
         {
             return Ok(_bookBusiness.FindAll());
         }
@@ -56,6 +60,19 @@ namespace RestFull.Controllers
             var book = _bookBusiness.FindByID(id);
             if (book == null) return NotFound();
             return Ok(book);
+        }
+
+        [HttpGet("findBookByName")]
+        [ProducesResponseType((200), Type = typeof(PersonVO))]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
+        [TypeFilter(typeof(HyperMediaFilter))]
+        public IActionResult Get([FromQuery] string firstName, [FromQuery] string lastName)
+        {
+            var person = _bookBusiness.FindByName(firstName, lastName);
+            if (person == null) return NotFound();
+            return Ok(person);
         }
 
         // Maps POST requests to https://localhost:{port}/api/book/
@@ -83,6 +100,19 @@ namespace RestFull.Controllers
             if (book == null) return BadRequest();
             return Ok(_bookBusiness.Update(book));
         }
+
+        [HttpPatch("{id}")]
+        [ProducesResponseType((200), Type = typeof(BookVO))]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
+        [TypeFilter(typeof(HyperMediaFilter))]
+        public IActionResult Patch(long id)
+        {
+            var book = _bookBusiness.Avaliable(id);
+            return Ok(book);
+        }
+
 
         // Maps DELETE requests to https://localhost:{port}/api/book/{id}
         // receiving an ID as in the Request Path

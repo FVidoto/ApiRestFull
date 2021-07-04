@@ -18,6 +18,11 @@ namespace RestFull.Model
 
         [Column("launch_date")]
         public DateTime LaunchDate { get; set; }
+
+        [Column("available")] 
+        public bool Available { get; set; }
+
+        
     }
 
 }

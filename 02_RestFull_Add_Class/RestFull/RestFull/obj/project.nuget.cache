@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FjkarIHRJaVN+JSPt7hurPW42Qnuqaob6fWrmIIMTsiv229IOVvIowBq+S8EPfLreNpcm4xSq0ILOrTuEUuThQ==",
+  "dgSpecHash": "VTpscjBu+1ZoV1sLFljCI9a/9TMNlK7ktlCnzWLrWIVV23dHI5QpLrZeG6Jb9IHhYa7hkzMC6DFVdjjoqOxKDA==",
   "success": true,
-  "projectFilePath": "C:\\_WorkSpace\\VisualStudio\\VDTech\\ApiRestFull\\00_RestFull_Base\\RestFull\\RestFull\\RestFull.csproj",
+  "projectFilePath": "C:\\_WorkSpace\\VisualStudio\\VDTech\\ApiRestFull\\02_RestFull_Add_Class\\RestFull\\RestFull\\RestFull.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vidoto\\.nuget\\packages\\evolve\\2.4.0\\evolve.2.4.0.nupkg.sha512",
     "C:\\Users\\Vidoto\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

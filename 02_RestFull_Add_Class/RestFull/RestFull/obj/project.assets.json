@@ -4797,11 +4797,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\_WorkSpace\\VisualStudio\\VDTech\\ApiRestFull\\00_RestFull_Base\\RestFull\\RestFull\\RestFull.csproj",
+      "projectUniqueName": "C:\\_WorkSpace\\VisualStudio\\VDTech\\ApiRestFull\\02_RestFull_Add_Class\\RestFull\\RestFull\\RestFull.csproj",
       "projectName": "RestFull",
-      "projectPath": "C:\\_WorkSpace\\VisualStudio\\VDTech\\ApiRestFull\\00_RestFull_Base\\RestFull\\RestFull\\RestFull.csproj",
+      "projectPath": "C:\\_WorkSpace\\VisualStudio\\VDTech\\ApiRestFull\\02_RestFull_Add_Class\\RestFull\\RestFull\\RestFull.csproj",
       "packagesPath": "C:\\Users\\Vidoto\\.nuget\\packages\\",
-      "outputPath": "C:\\_WorkSpace\\VisualStudio\\VDTech\\ApiRestFull\\00_RestFull_Base\\RestFull\\RestFull\\obj\\",
+      "outputPath": "C:\\_WorkSpace\\VisualStudio\\VDTech\\ApiRestFull\\02_RestFull_Add_Class\\RestFull\\RestFull\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
